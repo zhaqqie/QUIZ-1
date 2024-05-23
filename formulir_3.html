@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riwayat Hidup - Kursus/Latihan</title>
+<style>
+    /* Style CSS bisa dimodifikasi sesuai keinginan */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<h2>Kursus - Latihan Didalam dan Diluar Negeri</h2>
+<form action="/submit_course" method="post">
+    <label for="nama_kursus">Nama Kursus/Latihan:</label>
+    <input type="text" id="nama_kursus" name="nama_kursus" required>
+
+    <label for="lamanya">Lamanya:</label>
+    <input type="text" id="lamanya" name="lamanya" required>
+
+    <label for="tanggal_mulai">Tanggal Mulai:</label>
+    <input type="date" id="tanggal_mulai" name="tanggal_mulai" required>
+
+    <label for="tanggal_selesai">Tanggal Selesai:</label>
+    <input type="date" id="tanggal_selesai" name="tanggal_selesai" required>
+
+    <label for="ijazah_tanda">Ijazah/Tanda Lulus/ Keterangan:</label>
+    <input type="text" id="ijazah_tanda" name="ijazah_tanda" required>
+
+    <label for="keterangan">Tempat:</label>
+    <input type="text" id="keterangan" name="keterangan" required>
+
+    <label for="tempat_keterangan">Keterangan:</label>
+    <textarea id="tempat_keterangan" name="tempat_keterangan" required></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riwayat Hidup - Pengalaman Jabatan/Pekerjaan</title>
+<style>
+    /* Style CSS bisa dimodifikasi sesuai keinginan */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<h2>Pengalaman Jabatan/Pekerjaan</h2>
+<form action="/submit_experience" method="post">
+
+    <label for="nomor">Nomor:</label>
+    <input type="text" id="nomor" name="nomor" required> 
+
+    <label for="jabatan">Jabatan/Pekerjaan:</label>
+    <input type="text" id="no_jabatan" name="no_jabatan" required>
+
+    <label for="mulai">Mulai:</label>
+    <input type="date" id="mulai" name="mulai" required>
+
+    <label for="sampai">Sampai:</label>
+    <input type="date" id="sampai" name="sampai" required>
+
+    <label for="gol_ruang">Golongan Ruang Gaji:</label>
+    <input type="text" id="gol_ruang" name="gol_ruang" required>
+
+    <label for="gaji_pokok">Gaji Pokok:</label>
+    <input type="number" id="gaji_pokok" name="gaji_pokok" required>
+
+    <h3>Surat Keputusan</h3>
+    <form action="/submit_resume" method="post">
+    
+        <label for="pejabat">Pejabat:</label>
+        <input type="text" id="pejabat" name="pejabat" required>
+    
+        <label for="nomor">Nomor:</label>
+        <input type="text" id="nomor" name="nomor" required>
+    
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

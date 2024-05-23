@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riwayat Hidup - Pendidikan</title>
+<style>
+    /* Style CSS bisa dimodifikasi sesuai keinginan */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<h2>Pendidikan - Pendidikan Didalam dan Diluar Negeri</h2>
+<form action="/submit_education" method="post">
+    <label for="tingkat">Tingkat:</label>
+    <select id="tingkat" name="tingkat" required>
+        <option value="">Pilih Tingkat</option>
+        <option value="S.D">S.D</option>
+        <option value="S.L.T.P">S.L.T.P</option>
+        <option value="S.L.T.A">S.L.T.A</option>
+        <option value="D-I">D-I</option>
+        <option value="D-II">D-II</option>
+        <option value="D-III/Akademi">D-III/Akademi</option>
+        <option value="D-IV">D-IV</option>
+        <option value="S.1">S.1</option>
+        <option value="S.2">S.2</option>
+        <option value="S.3">S.3</option>
+        <option value="Spesialis I">Spesialis I</option>
+        <option value="Spesialis II">Spesialis II</option>
+        <option value="Profesi">Profesi</option>
+    </select>
+
+    <label for="nama_sekolah">Nama Pendidikan:</label>
+    <input type="text" id="nama_sekolah" name="nama_sekolah" required>
+
+    <label for="jurusan">Jurusan:</label>
+    <input type="text" id="jurusan" name="jurusan" required>
+
+    <label for="sttb">STTB/Tanda Lulus/Tahun Ijazah:</label>
+    <input type="text" id="sttb" name="sttb" required>
+
+    <label for="tempat">Tempat:</label>
+    <input type="text" id="tempat" name="tempat" required>
+
+    <label for="nama_kepala_sekolah">Nama Kepala Sekolah/Direktur/Dekan/Promotor:</label>
+    <input type="text" id="nama_kepala_sekolah" name="nama_kepala_sekolah" required>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
