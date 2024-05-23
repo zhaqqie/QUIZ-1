@@ -24,7 +24,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
     }
-    input[type="next"] {
+    input[type="submit"] {
         background-color: #4CAF50;
         color: white;
         padding: 10px 20px;
@@ -32,16 +32,16 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    input[type="next"]:hover {
+    input[type="submit"]:hover {
         background-color: #45a049;
     }
 </style>
 </head>
 <body>
 <h2>Pendidikan - Pendidikan Didalam dan Diluar Negeri</h2>
-<form action="/submit_education" method="post">
+<form action="formulir_3.html" method="get">
     <label for="tingkat">Tingkat:</label>
-    <select id="tingkat" name="tingkat" required>
+    <select id="tingkat" name="tingkat" >
         <option value="">Pilih Tingkat</option>
         <option value="S.D">S.D</option>
         <option value="S.L.T.P">S.L.T.P</option>
@@ -59,21 +59,21 @@
     </select>
 
     <label for="nama_sekolah">Nama Pendidikan:</label>
-    <input type="text" id="nama_sekolah" name="nama_sekolah" required>
+    <input type="text" id="nama_sekolah" name="nama_sekolah" >
 
     <label for="jurusan">Jurusan:</label>
-    <input type="text" id="jurusan" name="jurusan" required>
+    <input type="text" id="jurusan" name="jurusan" >
 
     <label for="sttb">STTB/Tanda Lulus/Tahun Ijazah:</label>
-    <input type="text" id="sttb" name="sttb" required>
+    <input type="text" id="sttb" name="sttb" >
 
     <label for="tempat">Tempat:</label>
-    <input type="text" id="tempat" name="tempat" required>
+    <input type="text" id="tempat" name="tempat" >
 
     <label for="nama_kepala_sekolah">Nama Kepala Sekolah/Direktur/Dekan/Promotor:</label>
-    <input type="text" id="nama_kepala_sekolah" name="nama_kepala_sekolah" required>
+    <input type="text" id="nama_kepala_sekolah" name="nama_kepala_sekolah" >
 
-    <input type="next" value="Next">
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>

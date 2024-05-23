@@ -31,7 +31,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
     }
-    input[type="next"] {
+    input[type="submit"] {
         background-color: #4CAF50;
         color: white;
         padding: 10px 20px;
@@ -39,46 +39,45 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    input[type="next"]:hover {
+    input[type="submit"]:hover {
         background-color: #45a049;
     }
 </style>
 </head> 
 <body>
 <h2>Pengalaman Jabatan/Pekerjaan</h2>
-<form action="/submit_experience" method="post">
+<form action="formulir_1.html" method="get">
 
     <label for="nomor">Nomor:</label>
-    <input type="text" id="nomor" name="nomor" required> 
+    <input type="text" id="nomor" name="nomor" > 
 
     <label for="jabatan">Jabatan/Pekerjaan:</label>
-    <input type="text" id="no_jabatan" name="no_jabatan" required>
+    <input type="text" id="no_jabatan" name="no_jabatan" >
 
     <label for="mulai">Mulai:</label>
-    <input type="date" id="mulai" name="mulai" required>
+    <input type="date" id="mulai" name="mulai" >
 
     <label for="sampai">Sampai:</label>
-    <input type="date" id="sampai" name="sampai" required>
+    <input type="date" id="sampai" name="sampai" >
 
     <label for="gol_ruang">Golongan Ruang Gaji:</label>
-    <input type="text" id="gol_ruang" name="gol_ruang" required>
+    <input type="text" id="gol_ruang" name="gol_ruang" >
 
     <label for="gaji_pokok">Gaji Pokok:</label>
-    <input type="number" id="gaji_pokok" name="gaji_pokok" required>
+    <input type="number" id="gaji_pokok" name="gaji_pokok" >
 
     <h3>Surat Keputusan</h3>
-    <form action="/submit_resume" method="post">
     
         <label for="pejabat">Pejabat:</label>
-        <input type="text" id="pejabat" name="pejabat" required>
+        <input type="text" id="pejabat" name="pejabat" >
     
         <label for="nomor">Nomor:</label>
-        <input type="text" id="nomor" name="nomor" required>
+        <input type="text" id="nomor" name="nomor" >
     
         <label for="tanggal">Tanggal:</label>
-        <input type="date" id="tanggal" name="tanggal" required>
+        <input type="date" id="tanggal" name="tanggal" >
 
-    <input type="next" value="Next">
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>

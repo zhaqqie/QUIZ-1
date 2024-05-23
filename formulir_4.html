@@ -31,7 +31,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
     }
-    input[type="next"] {
+    input[type="submit"] {
         background-color: #4CAF50;
         color: white;
         padding: 10px 20px;
@@ -39,43 +39,43 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    input[type="next"]:hover {
+    input[type="submit"]:hover {
         background-color: #45a049;
     }
 </style>
 </head>
 <body>
-<h2>Riwayat Pekerjaan - Riwayat Kepangkatan Golongan Ruang Penggajian</h2>
-<form action="/submit_employment" method="post">
+    <h2>Riwayat Pekerjaan - Riwayat Kepangkatan Golongan Ruang Penggajian</h2>
+    <form action="formulir_5.html" method="get">
 
     <label for="nomor">Nomor:</label>
-    <input type="text" id="nomor" name="nomor" required>
+    <input type="text" id="nomor" name="nomor" >
 
     <label for="golongan_ruang">Golongan Ruang Penggajian:</label>
-    <input type="text" id="golongan_ruang" name="golongan_ruang" required>
+    <input type="text" id="golongan_ruang" name="golongan_ruang" >
 
     <label for="penggajian_berlaku">Berlaku Terhitung Mulai Tanggal:</label>
-    <input type="date" id="penggajian_berlaku" name="penggajian_berlaku" required>
+    <input type="date" id="penggajian_berlaku" name="penggajian_berlaku" >
 
     <label for="gaji_pokok">Gaji Pokok:</label>
-    <input type="number" id="gaji_pokok" name="gaji_pokok" required>
+    <input type="number" id="gaji_pokok" name="gaji_pokok" >
 
     <h3>Surat Keputusan</h3>
-<form action="/submit_resume" method="post">
+
 
     <label for="pejabat">Pejabat:</label>
-    <input type="text" id="pejabat" name="pejabat" required>
+    <input type="text" id="pejabat" name="pejabat" >
 
     <label for="nomor">Nomor:</label>
-    <input type="text" id="nomor" name="nomor" required>
+    <input type="text" id="nomor" name="nomor" >
 
     <label for="tanggal">Tanggal:</label>
-    <input type="date" id="tanggal" name="tanggal" required>
+    <input type="date" id="tanggal" name="tanggal" >
 
     <label for="peraturan_dasar">Peraturan yang Dijadikan Dasar:</label>
-    <textarea id="peraturan_dasar" name="peraturan_dasar" required></textarea>
+    <textarea id="peraturan_dasar" name="peraturan_dasar" ></textarea>
 
-    <input type="next" value="Next">
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>
