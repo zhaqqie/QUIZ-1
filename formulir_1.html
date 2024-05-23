@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Riwayat Hidup</title>
 <style>
-    /* Style CSS bisa dimodifikasi sesuai keinginan */
+    
     body {
         font-family: Arial, sans-serif;
         margin: 20px;
@@ -38,40 +38,41 @@
 </style>
 </head>
 <body>
-<h2>Formulir Riwayat Hidup</h2>
+<h2>Daftar Riwayat Hidup - Keterangan Perseorangan</h2>
     <form action="formulir_2.html" method="get">
-    <label for="nama">Nama Lengkap:</label>
+
+    <label for="nama">1. Nama Lengkap:</label>
     <input type="text" id="nama" name="nama" >
 
-    <label for="nip">NIP:</label>
+    <label for="nip">2. N.I.P:</label>
     <input type="text" id="nip" name="nip" >
 
-    <label for="pangkat">Pangkat:</label>
+    <label for="pangkat">3. Pangkat dan Golongan Ruang:</label>
     <input type="text" id="pangkat" name="pangkat" >
 
-    <label for="golongan">Golongan/Ruang:</label>
-    <input type="text" id="golongan" name="golongan" >
+    <h4>4. Tempat Lahir/Tanggal Lahir:</h4>
 
-    <label for="tempat_lahir">Tempat Lahir:</label>
+    <label for="tempat_lahir">a. Tempat Lahir:</label>
     <input type="text" id="tempat_lahir" name="tempat_lahir" >
 
-    <label for="kabupaten_kota">Kabupaten/Kota:</label>
+    <label for="kabupaten_kota">b. Kabupaten/Kota:</label>
     <input type="text" id="kabupaten_kota" name="kabupaten_kota" >
 
-    <label for="tanggal_lahir">Tanggal Lahir:</label>
+    <label for="tanggal_lahir">c. Tanggal Lahir:</label>
     <input type="date" id="tanggal_lahir" name="tanggal_lahir" >
     <br></br>
+    <br>
 
-    <label for="jenis_kelamin">Jenis Kelamin:</label>
+    <label for="jenis_kelamin">5. Jenis Kelamin:</label>
     <select id="jenis_kelamin" name="jenis_kelamin" >
         <option value="Pria">Pria</option>
         <option value="Wanita">Wanita</option>
     </select>
 
-    <label for="agama">Agama:</label>
+    <label for="agama">6. Agama:</label>
     <input type="text" id="agama" name="agama" >
 
-    <label for="status_perkawinan">Status Perkawinan:</label>
+    <label for="status_perkawinan">7. Status Perkawinan:</label>
     <select id="status_perkawinan" name="status_perkawinan" >
         <option value="Belum Kawin">Belum Kawin</option>
         <option value="Kawin">Kawin</option>
@@ -79,17 +80,61 @@
         <option value="Janda">Janda</option>
     </select>
 
-    <label for="alamat_rumah">Alamat Rumah:</label>
-    <textarea id="alamat_rumah" name="alamat_rumah" ></textarea>
+    <div>
+        <h4>8. Alamat Rumah:</h4>
+    
+        <div>
+            <label for="jalan">a. Jalan:</label>
+            <input type="text" id="jalan" name="jalan">
+        
+            <label for="kelurahan">b. Kelurahan/Desa:</label>
+            <input type="text" id="kelurahan" name="kelurahan">
+        
+            <label for="kecamatan">c. Kecamatan:</label>
+            <input type="text" id="kecamatan" name="kecamatan">
+        
+            <label for="kabupaten">d. Kabupaten/Kota:</label>
+            <input type="text" id="kabupaten" name="kabupaten">
+        
+            <label for="provinsi">e. Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi">
+        </div>
+        
+    
+    <div>
+        <h4>9. Keterangan Badan:</h4>
+    
+        <label for="tinggi">a. Tinggi (cm):</label>
+        <input type="text" id="tinggi" name="tinggi">
+    
+        <label for="berat">b. Berat Badan (Kg):</label>
+        <input type="text" id="berat" name="berat">
+    
+        <label for="rambut">c. Rambut:</label>
+        <input type="text" id="rambut" name="rambut">
+    
+        <label for="bentuk">d. Bentuk Muka:</label>
+        <input type="text" id="bentuk" name="bentuk">
+    
+        <label for="warna">e. Warna Kulit:</label>
+        <input type="text" id="warna" name="warna">
+    
+        <label for="ciri">f. Ciri Khas:</label>
+        <input type="text" id="ciri" name="ciri">
+    
+        <label for="cacat">g. Cacat Tubuh:</label>
+        <input type="text" id="cacat" name="cacat">
+    </div>
+    
+    <br>
+    <br>
 
-    <label for="keterangan_badan">Keterangan Badan:</label>
-    <textarea id="keterangan_badan" name="keterangan_badan" ></textarea>
-
-    <label for="kegemaran">Kegemaran (Hobby):</label>
-    <textarea id="kegemaran" name="kegemaran" ></textarea>
+    <label for="tempat_lahir">10. Kegemaran (Hobby):</label>
+    <input type="text" id="tempat_lahir" name="tempat_lahir" >
 
     <input type="submit" value="Submit">
 </form>
 </body>
 </html>
+
 
